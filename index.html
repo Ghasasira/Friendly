@@ -2,305 +2,107 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+    <link rel="stylesheet" href="assets/css/indexstyles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friendly</title>
-
-    <!-- Favicons -->
-    <link rel="icon" href="assets\img\favicon-16x16.png">
-    <link rel="icon" href="assets\img\favicon-32x32.png">
-    <link rel="icon" href="assets\img\favicon-512x512.png">
-    <link rel="icon" href="assets\img\favicon-192x192.png">
-    <link rel="icon" href="favicon.ico">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <!-- Libraries CSS Files -->
-    <link href="assets/Libraries/aos/aos.css" rel="stylesheet">
-    <link href="assets/Libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/Libraries/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/Libraries/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/Libraries/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/Libraries/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-
-    <!-- =======================================================
-  * Template Name: iPortfolio - v3.9.0
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
-
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-    <!--Header-->
-    <header id="header">
-        <div class="d-flex flex-column">
-
-            <div class="profile">
-                <img src="assets/img/profile-img.png" alt="" class="img-fluid rounded-circle">
-                <h1 class="text-light">
-                    <a href="index.html"></a>
-                </h1>
-                <div class="social-links mt-3 text-center">
-                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                </div>
-            </div>
-
-            <nav id="navbar" class="nav-menu navbar">
-                <ul>
-                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-                    <li><a href="#profileSection" class="nav-link scrollto"><i class="bx bx-user"></i> <span>My Profile</span></a></li>
-                    <li><a href="#usersection" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Other Users</span></a></li>
-                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>My Account and Customization</span></a></li>
-                </ul>
-            </nav>
-
+    <div class="major">
+        <div class="logo">
+            <h1 id="frndly">Friendly</h1>
+            <p><em>it doesn't get more <strong>Friendly</strong> than this</em></p>
         </div>
-    </header>
-    <!-- End Header -->
-
-    <!--Startup Section-->
-    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-        <div class="hero-container" data-aos="fade-in">
-            <h1 style="color: orange;">Friendly</h1>
-            <p> It can't get more <span class="typed" data-typed-items="Friendly, Amiable, Congenial, Benevolent"></span></p>
+        <div>
+            <button class="butons" id="logon">login</button>
+            <button class="butons" id="signup">signup</button>
         </div>
-    </section>
-    <!-- End Startup -->
+    </div>
 
-    <main id="main">
 
-        <!--profile section-->
-        <section id="profileSection" class="about">
-            <div class="container">
+    <div id="lagin">
+        <form id="loginform" action="#" onsubmit="login(event);" autocomplete="off">
+            <table>
+                <thead>
+                    <tr>
+                        <td id="login">Login Here</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Enter your Email" id="lemail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password" placeholder="Enter your Password" id="pswd">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>
+                                    login
+                                </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Do you have an account ?</td>
+                    </tr>
+                    <tr>
+                        <td><a id="altSignup" href="">sign up</a> here</td>
+                    </tr>
+                </tbody>
+            </table>
 
-                <div class="section-title">
-                    <h2>Profile</h2>
-                    <p id="statement"></p>
-                </div>
+        </form>
+    </div>
 
-                <div class="row">
-                    <div class="col-lg-4" data-aos="fade-right">
-                        <img src="assets/img/profile-img.png" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                        <p class="fst-italic" id="User_statement">
-                        </p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Username:</strong> <span id="username"></span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span id="dob"></span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Address:</strong> <span id="address"></span></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Primary school:</strong> <span id="primo"></span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>High school:</strong> <span id="high"></span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Campus:</strong> <span id="campus"></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p id="AOB">
+    <div id="signups">
+        <form id="signupform" onsubmit="signUp(event);" autocomplete="off" action="#">
 
-                        </p>
-                    </div>
-                </div>
+            <p class="sign">Sign Up</p>
 
+            <div class="textboxes">
+                <label for="fname">First Name</label><br>
+                <input class="inputs" name="fname" id="fname" type="text" required><br><br>
+                <label for="lname">Last Name</label><br>
+                <input class="inputs" name="lname" id="lname" type="text" required><br><br>
+                <label for="email">Email</label><br>
+                <input class="inputs" name="email" id="email" type="text" required><br><br>
+                <label for="pass">Password</label><br>
+                <input class="inputs" name="pass" id="pwd" type="password" required><br><br>
+                <label for="passCon">Confirm Password</label><br>
+                <input class="inputs" name="passCon" type="password" required><br><br>
+                <label for="age">age</label><br>
+                <input class="inputs" name="age" id="age" type="text" required><br><br>
             </div>
-        </section>
-        <!-- end of Profile section -->
-
-
-        <!--Skills Section -->
-        <section id="skills" class="skills section-bg">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Hobbies</h2>
-                    <p>The following are some of my hobbies and skills.</p>
-                </div>
-
-                <div class="row skills-content">
-
-                    <div class="col-lg-6" data-aos="fade-up">
-
-                        <div class="progress">
-                            <span class="skill" id="hob1"></span>
-
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill" id="hob2"></span>
-
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill" id="hob3"> </span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-                        <div class="progress">
-                            <span class="skill" id="hob4"></span>
-
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill" id="hob5"></span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- End Skills Section -->
-
-        <!--Other Users Section-->
-        <section id="usersection" class="portfolio section-bg">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Other Users</h2>
-                </div>
-
-                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="" class="img-fluid" alt="user">
-                            <div>
-                                <p>Username: <span id="uname"></span></p>
-                                <p>Statement: <span id="ustatement"></span></p>
-                                <p>Went to: <span id="ueducation"></span></p>
-                                <p>Hobbies: <span id="uhobbies"></span></p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- End Other Users Section -->
-
-
-        <!--My Account Section-->
-        <section id="contact" class="contact">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>My Account and Customization</h2>
-                </div>
-
-
-                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                    <form action="" role="form" class="php-email-form" onsubmit="updateProfile(event);">
-                        <div class="row">
-
-                            <div class="form-group col-md-6">
-                                <label for="name">Your Username</label>
-                                <input type="text" name="name" class="form-control" id="username" required>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="statement">Your Statement</label>
-                                <input type="text" class="form-control" name="statement" id="statement">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <label for="primo">Primary School</label>
-                                <input type="text" name="primo" class="form-control" id="primoschool">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="sec">High School</label>
-                                <input type="text" name="sec" class="form-control" id="secschool">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="camp">Campus</label>
-                                <input type="text" class="form-control" name="camp" id="muk">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <label for="hob1">Hobby</label>
-                                <input type="text" name="hob1" class="form-control" id="hob1">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="hob2">Hobby</label>
-                                <input type="text" name="hob2" class="form-control" id="hob2">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="hob3">Hobby</label>
-                                <input type="text" class="form-control" name="hob3" id="hob3">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="hob4">Hobby</label>
-                                <input type="text" name="hob4" class="form-control" id="hob4">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="hob5">Hobby</label>
-                                <input type="text" class="form-control" name="hob5" id="hob5">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Any other information you would like to share</label>
-                            <textarea class="form-control" name="message" rows="10" id="aob"></textarea>
-                        </div>
-                        <div class="text-center"><button type="submit">submit</button></div>
-                    </form>
-                </div>
+            <div>
+                <p>Gender</p>
+                <input type="radio" name="gender" id="male">
+                <label for="male">male</label><br><br>
+                <input type="radio" name="gender" id="female">
+                <label for="female">female</label><br><br>
+                <input type="radio" name="gender" id="pntm">
+                <label for="pntm">prefer not to mention</label><br><br><br><br><br>
 
             </div>
 
-            </div>
-        </section>
-        <!-- End My Account Section -->
+            <input type="checkbox" name="check" id="terms">
+            <label for="terms">Do you agree to the <a href="#">terms and conditions</a></label><br><br>
 
-    </main>
-    <!-- End #main -->
+            <input type="submit" name="sub" id="sub">
 
+        </form>
+    </div>
 
+    <div id="overlay"></div>
 
-
-
-
-    <!-- Libraries JS Files -->
-    <script src="assets/Libraries/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/Libraries/aos/aos.js"></script>
-    <script src="assets/Libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/Libraries/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/Libraries/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/Libraries/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/Libraries/typed.js/typed.min.js"></script>
-    <script src="assets/Libraries/waypoints/noframework.waypoints.js"></script>
-
-
-    <!--Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <Script src="assets/js/profile.js"></Script>
-
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/signup.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

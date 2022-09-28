@@ -18,7 +18,7 @@
          document.querySelector('form').reset();
          document.getElementById('fname').focus();
          alert("Account Created.\n\nPlease Login below.");
-         location.href = "friendly.html";
+         location.href = "landing.html";
 
      } else {
          alert("Ooopppssss... Duplicate found!!!\nYou have already signed up");
@@ -39,7 +39,7 @@
          alert("Incorrect login credentials");
      } else {
          alert('Login successful');
-         location.href = "friendly.html";
+         location.href = "landing.html";
      }
      e.preventDefault();
  }
