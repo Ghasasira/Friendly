@@ -14,72 +14,80 @@
 <body>
     <div class="major">
         <div class="logo">
-            <h1 id="frndly">Friendly</h1>
+            <h1 class="frndly">Friendly</h1>
             <p><em>it doesn't get more <strong>Friendly</strong> than this</em></p>
         </div>
         <div>
             <button class="butons" onclick="showLoginForm(true)">login</button>
-            <button class="butons" id="signup">signup</button>
+            <button class="butons" id="signup" onclick="showSignupForm(true)">signup</button>
         </div>
     </div>
 
-    <form id="loginForm" action="#" onsubmit="login(event);" autocomplete="off" hidden>
-        <div class="card">
-                <div class="card-header">
-                    <h5 class="card-title">Login</h5>
-                    <button type="button" class="close" onclick="showLoginForm(false)">
-                        <span>&times;</span>
-                    </button>
+    <form class="form-outline myForms" id="loginForm" action="#" onsubmit="login(event);" autocomplete="off" hidden>
+        <div class="card form-card">
+            <div class="card-header">
+                <h5 class="card-title">Login</h5>
+                <button type="button" class="close" onclick="showLoginForm(false)">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <label class="form-label" for="lemail">Email</label>
+                    <input type="text" class="p-2 form-control" id="lemail" />
+                    <label class="form-label" for="pswd">Password</label>
+                    <input type="password" class="p-2 form-control" id="pswd">
                 </div>
-                <div class="card-body">
-                    <input type="text" placeholder="Enter your Email" id="lemail">
-                    <input type="password" placeholder="Enter your Password" id="pswd">
-                    <div>Don't have an account ? <a id="altSignup" href="">Sign Up</a> here</div>
-                </div>
-                <div class="card-footer">
-                    <button type="button" class="butons">Login</button>
-                    <button type="button" class="butons" onclick="showLoginForm(false)">Close</button>
-                </div>
+                <div>Don't have an account ? <a href="#" onclick="showLoginForm(false);showSignupForm(true)">Sign Up</a> here</div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="butons">Login</button>
+                <button type="button" class="butons" onclick="showLoginForm(false)">Close</button>
+            </div>
         </div>
     </form>
 
-    <div id="signups">
-        <form id="signupform" onsubmit="signUp(event);" autocomplete="off" action="#">
-
-            <p class="sign">Sign Up</p>
-
-            <div class="textboxes">
-                <label for="fname">First Name</label><br>
-                <input class="inputs" name="fname" id="fname" type="text" required><br><br>
-                <label for="lname">Last Name</label><br>
-                <input class="inputs" name="lname" id="lname" type="text" required><br><br>
-                <label for="email">Email</label><br>
-                <input class="inputs" name="email" id="email" type="text" required><br><br>
-                <label for="pass">Password</label><br>
-                <input class="inputs" name="pass" id="pwd" type="password" required><br><br>
-                <label for="passCon">Confirm Password</label><br>
-                <input class="inputs" name="passCon" type="password" required><br><br>
-                <label for="age">age</label><br>
-                <input class="inputs" name="age" id="age" type="text" required><br><br>
+    <form class="form-outline myForms" id="signupForm" onsubmit="signUp(event);" autocomplete="off" action="#" hidden>
+        <div class="card form-card">
+            <div class="card-header">
+                <h5 class="card-title">Sign Up</h5>
+                <button type="button" class="close" onclick="showSignupForm(false)">
+                    <span>&times;</span>
+                </button>
             </div>
-            <div>
-                <p>Gender</p>
-                <input type="radio" name="gender" id="male">
-                <label for="male">male</label><br><br>
+
+            <div class="card-body">
+                <label class="form-label" for="fname">First Name</label>
+                <input class="p-2 form-control" name="fname" id="fname" type="text" required>
+                <label class="form-label" for="lname">Last Name</label>
+                <input class="p-2 form-control" name="lname" id="lname" type="text" required>
+                <label class="form-label" for="email">Email</label>
+                <input class="p-2 form-control" name="email" id="email" type="text" required>
+                <label class="form-label" for="pass">Password</label>
+                <input class="p-2 form-control" name="pass" id="pwd" type="password" required>
+                <label class="form-label" for="passCon">Confirm Password</label>
+                <input class="p-2 form-control" name="passCon" type="password" required>
+                <label class="form-label" for="age">Age</label>
+                <input class="p-2 form-control" name="age" id="age" type="text" required>
+                <br>
+                <div>Gender</div>
+                <input type="radio" name="gender" id="male" checked>
+                <label class="form-label" for="male">Male</label>
                 <input type="radio" name="gender" id="female">
-                <label for="female">female</label><br><br>
+                <label class="form-label" for="female">Female</label>
                 <input type="radio" name="gender" id="pntm">
-                <label for="pntm">prefer not to mention</label><br><br><br><br><br>
-
+                <label class="form-label" for="pntm">Prefer Not to mention</label>
+                <div class="row">
+                    <div class="col-1"><input type="checkbox" name="check" id="terms" required></div>
+                    <div class="col-11">Do you agree to the <a href="#">Terms and Conditions</a></div>
+                </div>
             </div>
-
-            <input type="checkbox" name="check" id="terms">
-            <label for="terms">Do you agree to the <a href="#">terms and conditions</a></label><br><br>
-
-            <input type="submit" name="sub" id="sub">
-
-        </form>
-    </div>
+            <div class="card-footer">
+                <button type="submit" class="butons">Submit</button>
+                <button type="button" class="butons" onclick="showSignupForm(false)">Cancel</button>
+            </div>
+        </div>
+    </form>
 
     <div id="overlay"></div>
 
