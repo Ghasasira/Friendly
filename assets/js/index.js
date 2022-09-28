@@ -17,7 +17,7 @@
          localStorage.setItem('formData', JSON.stringify(formData));
          document.querySelector('form').reset();
          document.getElementById('fname').focus();
-         alert("Account Created.\n\nPlease Login below.");
+         alert("Account Created.\nLet's Get Friendly!");
          location.href = "landing.html";
 
      } else {
