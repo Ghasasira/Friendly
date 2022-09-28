@@ -3,6 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="assets/css/indexstyles.css">
+    <link href="assets/Libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/Libraries/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,49 +18,30 @@
             <p><em>it doesn't get more <strong>Friendly</strong> than this</em></p>
         </div>
         <div>
-            <button class="butons" id="logon">login</button>
+            <button class="butons" onclick="showLoginForm(true)">login</button>
             <button class="butons" id="signup">signup</button>
         </div>
     </div>
 
-
-    <div id="lagin">
-        <form id="loginform" action="#" onsubmit="login(event);" autocomplete="off">
-            <table>
-                <thead>
-                    <tr>
-                        <td id="login">Login Here</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <input type="text" placeholder="Enter your Email" id="lemail">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="password" placeholder="Enter your Password" id="pswd">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button>
-                                    login
-                                </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Do you have an account ?</td>
-                    </tr>
-                    <tr>
-                        <td><a id="altSignup" href="">sign up</a> here</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </form>
-    </div>
+    <form id="loginForm" action="#" onsubmit="login(event);" autocomplete="off" hidden>
+        <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Login</h5>
+                    <button type="button" class="close" onclick="showLoginForm(false)">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <input type="text" placeholder="Enter your Email" id="lemail">
+                    <input type="password" placeholder="Enter your Password" id="pswd">
+                    <div>Don't have an account ? <a id="altSignup" href="">Sign Up</a> here</div>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="butons">Login</button>
+                    <button type="button" class="butons" onclick="showLoginForm(false)">Close</button>
+                </div>
+        </div>
+    </form>
 
     <div id="signups">
         <form id="signupform" onsubmit="signUp(event);" autocomplete="off" action="#">
