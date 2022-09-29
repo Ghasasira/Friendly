@@ -50,7 +50,7 @@ const updateProfile = e => {
     if (JSON.parse(sessionStorage.getItem("users")) != null) {
         var users = JSON.parse(sessionStorage.getItem("users"));
         users.push(user);
-        sessionStorage.seItem("users", JSON.stringify(users));
+        sessionStorage.setItem("users", JSON.stringify(users));
     } else {
         users = [];
         users.push(user);
@@ -59,6 +59,31 @@ const updateProfile = e => {
     //sessionStorage.setItem("currentUser", username.value);
     sessionStorage.setItem("currentUserDetails", JSON.stringify(user));
 
+
+    //Picking data from the session storage to show in all users section
+    function retrievingUserData() {
+        var userdata = [];
+        for (let i = 0; i < sessionStorage.length; i++) {
+            let storedUser = JSON.parse(sessionStorage.getItem("users"));
+            storedUser.push(userdata);
+            console.log(userdata);
+        }
+    }
+
+    function RetrieveDataFromCart() {
+
+        var elements = [];
+
+        for (let i = 0; i < sessionStorage.length; i++) {
+            var element = JSON.parse(sessionStorage.getItem(sessionStorage.key(i)));
+            elements.push(element);
+            console.log(element.name);
+        }
+
+    }
+    RetrieveDataFromCart();
+    //retrievingUserData();
+    location.href = "#profileSection"
     e.preventDefault();
 }
 
