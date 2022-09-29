@@ -177,13 +177,16 @@
 })()
 //Theme Switch JS
 let light = true;
-let mainSection = document.getElementById('main');
+const mainSection = document.getElementById('main');
+const headerSection = document.getElementById('header');
 function themeSwitch() {
     if (light) {
         light = false;
         mainSection.className='darkmode';
+        headerSection.className='darkmode';
     } else {
         light = true;
         mainSection.className='';
+        headerSection.className='';
     }
 }
