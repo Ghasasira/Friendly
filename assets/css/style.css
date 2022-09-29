@@ -595,13 +595,7 @@ section#hero{
     padding-bottom: 8px;
 }
 
-
-/* <<<<<<< HEAD */
-
-.contact .n-email-form input,
 .contact .n-email-form textarea {
-    /* .contact .php-email-form textarea {
->>>>>>> 48414bf204d6de7631797df0e716ad765f214391 */
     border-radius: 0;
     box-shadow: none;
     font-size: 14px;
