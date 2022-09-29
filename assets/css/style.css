@@ -20,8 +20,13 @@ div.filter-card:hover{border-style: solid;border-width: 2px;border-radius: 4px;b
 #theme{
     position: fixed;
     top: 5px;
-    right: 40vw;
+    right: 5px;
     z-index: 2;
+}
+@media(max-width:1024px){
+    #theme{
+        right: 40vw;
+    }
 }
 
 .customButton {
