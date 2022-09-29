@@ -175,3 +175,15 @@
     new PureCounter();
 
 })()
+//Theme Switch JS
+let light = true;
+let mainSection = document.getElementById('main');
+function themeSwitch() {
+    if (light) {
+        light = false;
+        mainSection.className='darkmode';
+    } else {
+        light = true;
+        mainSection.className='';
+    }
+}

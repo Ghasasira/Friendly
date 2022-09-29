@@ -3,6 +3,27 @@ body {
     color: #272829;
 }
 
+.darkmode {
+    background-color: #1a1423;
+    color: #f40;
+}
+#theme{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 2;
+}
+.customButton{
+    padding: 4px;
+    font-size: 15px;
+    background-color: #1a142399;
+    color: #fffa;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 a {
     color: #149ddd;
     text-decoration: none;
@@ -267,10 +288,13 @@ h6 {
 section {
     padding: 60px 0;
     overflow: hidden;
-}
-
-.section-bg {
-    background: #f5f8fd;
+    box-shadow: 0 0 20px #9998;
+    margin: 0px 30px 30px 30px;
+    border-radius: 4px;
+}:last-child{
+    margin-bottom: 0px;
+}#hero{
+    margin: 0px;
 }
 
 .section-title {
@@ -862,8 +886,6 @@ section {
 .contact .php-email-form {
     width: 100%;
     padding: 30px;
-    background: #fff;
-    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .php-email-form .form-group {
@@ -928,7 +950,6 @@ section {
     padding-bottom: 8px;
 }
 
-.contact .php-email-form input,
 .contact .php-email-form textarea {
     border-radius: 0;
     box-shadow: none;
