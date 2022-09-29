@@ -92,7 +92,7 @@
                 background-position-x: 1000vw;
             }
         }
-        @media(max-width:1024px){
+        @media only screen and (max-width:1024px){
             .logo h1 {
                 font-size: 50px;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
