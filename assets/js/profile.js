@@ -57,32 +57,39 @@ const updateProfile = e => {
         sessionStorage.setItem("users", JSON.stringify(users));
     }
     //sessionStorage.setItem("currentUser", username.value);
-    sessionStorage.setItem("currentUserDetails", JSON.stringify(user));
 
 
-    //Picking data from the session storage to show in all users section
-    function retrievingUserData() {
-        var userdata = [];
-        for (let i = 0; i < sessionStorage.length; i++) {
-            let storedUser = JSON.parse(sessionStorage.getItem("users"));
-            storedUser.push(userdata);
-            console.log(userdata);
-        }
-    }
 
-    function RetrieveDataFromCart() {
+    // sessionStorage.setItem("currentUserDetails", JSON.stringify(user));
 
-        var elements = [];
 
-        for (let i = 0; i < sessionStorage.length; i++) {
-            var element = JSON.parse(sessionStorage.getItem(sessionStorage.key(i)));
-            elements.push(element);
-            console.log(element.name);
-        }
+    // //Picking data from the session storage to show in all users section
+    // //function retrievingUserData() {
+    // //var users = JSON.parse(sessionStorage.getItem("sessionStorage"))
+    // //var userdata = [];
+    // for (let i = 0; i < sessionStorage.length; i++) {
+    //     let storedUser = JSON.parse(sessionStorage.getItem(sessionStorage.key(i)));
+    //     //     storedUser.push(userdata);
+    //     //     console.log(storedUser.name);
+    //     document.getElementById("uname").innerHTML = storedUser.name;
+    //     document.getElementById("ustatement").innerHTML = storedUser.personalStatement;
 
-    }
-    RetrieveDataFromCart();
-    //retrievingUserData();
+    // }
+    //}
+
+    // function RetrieveDataFromCart() {
+
+    //     var elements = [];
+
+    //     for (let i = 0; i < sessionStorage.length; i++) {
+    //         var element = JSON.parse(sessionStorage.getItem(sessionStorage.key(i)));
+    //         elements.push(element);
+    //         console.log(element.name);
+    //     }
+
+    // }
+    // RetrieveDataFromCart();
+    // //retrievingUserData();
     location.href = "#profileSection"
     e.preventDefault();
 }
