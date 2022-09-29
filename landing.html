@@ -34,6 +34,7 @@
 
 <body>
 
+    <div id="theme" class="customButton" title="Change Page Theme" onclick="themeSwitch()"><i class="bi bi-triangle-half"></i>Theme</div>
     <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
     <!--Header-->
@@ -56,21 +57,14 @@
 
             <nav id="navbar" class="nav-menu navbar">
                 <ul>
-                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+                    <li><a href="#hero" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
                     <li><a href="#profileSection" class="nav-link scrollto"><i class="bx bx-user"></i> <span>My Profile</span></a></li>
                     <li><a href="#usersection" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Other Users</span></a></li>
-                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-book"></i> <span>My Account and Customization</span></a></li>
+                    <li><a href="#contact" class="nav-link scrollto active"><i class="bx bx-book"></i> <span>My Account and Customization</span></a></li>
+                    <hr style="border-color: lightslategrey;">
+                    <li><a href="index.html" class="nav-link"><i class="bi bi-toggle-off"></i> <span>Logout</span></a></li>
                 </ul>
             </nav>
-
-
-        </div>
-        <div>
-            <button style="border-radius: 4px; background-color:orange;">
-                <a href="index.html">
-                    logout
-                </a>
-            </button>
         </div>
     </header>
     <!-- End Header -->
@@ -130,7 +124,7 @@
 
 
         <!--Skills Section -->
-        <section id="skills" class="skills section-bg">
+        <section id="skills" class="skills">
             <div class="container">
 
                 <div class="section-title">
@@ -180,7 +174,7 @@
         <!-- End Skills Section -->
 
         <!--Other Users Section-->
-        <section id="usersection" class="portfolio section-bg">
+        <section id="usersection" class="portfolio">
             <div class="container">
 
                 <div class="section-title">
@@ -191,7 +185,6 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
-                            <img src="" class="img-fluid" alt="user">
                             <div>
                                 <p>Username: <span id="uname"></span></p>
                                 <p>Statement: <span id="ustatement"></span></p>
@@ -310,6 +303,7 @@
 
     <script src="assets/js/main.js"></script>
     <Script src="assets/js/profile.js"></Script>
+    <Script src="assets/js/users.js"></Script>
 
 </body>
 

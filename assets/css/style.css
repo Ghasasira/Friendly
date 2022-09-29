@@ -8,6 +8,30 @@ body {
     color: #272829;
 }
 
+.darkmode {
+    background-color: #1a1423;
+    color: #f40;
+}
+
+#theme {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 2;
+}
+
+.customButton {
+    padding: 4px;
+    font-size: 15px;
+    background-color: #1a142399;
+    color: #fffa;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
 a {
     color: #149ddd;
     text-decoration: none;
@@ -272,10 +296,17 @@ h6 {
 section {
     padding: 60px 0;
     overflow: hidden;
+    box-shadow: 0 0 20px #9998;
+    margin: 0px 30px 30px 30px;
+    border-radius: 4px;
 }
 
-.section-bg {
-    background: #f5f8fd;
+:last-child {
+    margin-bottom: 0px;
+}
+
+#hero {
+    margin: 0px;
 }
 
 .section-title {
@@ -498,8 +529,6 @@ section {
 .contact .n-email-form {
     width: 100%;
     padding: 30px;
-    background: #fff;
-    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .n-email-form .form-group {
@@ -564,8 +593,13 @@ section {
     padding-bottom: 8px;
 }
 
+
+/* <<<<<<< HEAD */
+
 .contact .n-email-form input,
 .contact .n-email-form textarea {
+    /* .contact .php-email-form textarea {
+>>>>>>> 48414bf204d6de7631797df0e716ad765f214391 */
     border-radius: 0;
     box-shadow: none;
     font-size: 14px;
